@@ -20,6 +20,10 @@ public class Node {
 	public Integer getDistance() {
 		return distance;
 	}
+	
+	public Integer getNegativeDistance() {
+		return -distance;
+	}
 
 //	public int getIntValue() {
 //		return intValue;
@@ -32,6 +36,8 @@ public class Node {
 	public String toString() {
 		return "(" + this.strValue + " , " + this.distance + ")";
 	}
+	
+	
 
 	
 

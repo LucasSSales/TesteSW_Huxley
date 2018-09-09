@@ -11,10 +11,8 @@ public class AdegaDeVinhos {
 		this.price = price;
 		this.memo = new int[bottles][bottles];
 		for (int i = 0; i < bottles; i++) {
-			//System.out.println(i);
 			for (int j = 0; j < bottles; j++) {
 				this.memo[i][j] = -1;
-				//System.out.println(j);
 			}
 		}
 	}

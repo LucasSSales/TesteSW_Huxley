@@ -71,7 +71,7 @@ public class Graph {
 			System.out.println(deq.getStrValue());
 		}
 	}	
-	
+		
 	public void dfs(String source) {
 		HashMap<String, Boolean> visited = new HashMap<String, Boolean>();
 		visited.put(source, true);
@@ -157,24 +157,36 @@ public class Graph {
 		return sum;
 	}
 	
-	
-//	def dijkstra (grafo, source, visited):
-//	    pq, x = [(0, source)], 0
-//	    
-//	    while(len(pq)!=0):
-//	        dequeued = heapq.heappop(pq)
-//
-//	        if(visited[dequeued[1]]==0):
-//	            x += dequeued[0]
-//	        else:
-//	            continue
-//
-//	        visited[dequeued[1]] = 1
-//
-//	        for i in range(0,len(grafo[dequeued[1]])):
-//	            if(visited[grafo[dequeued[1]][i][1]] == 0):
-//	                heapq.heappush(pq, (grafo[dequeued[1]][i][0], grafo[dequeued[1]][i][1]))
-//	    print(x)
+	public int maxst (String source) {
+		Comparator<Node> c = new Comparator<Node>() {
+			public int compare(Node n1, Node n2) {			
+				return n1.getNegativeDistance().compareTo(n2.getNegativeDistance());
+			}
+		};
+		PriorityQueue<Node> pq = new PriorityQueue<Node>(c);
+		pq.add(new Node(source, 0));
+		HashMap<String, Boolean> visited = new HashMap<String, Boolean>();
+		int sum = 0;
 		
+		while(!pq.isEmpty()) {
+			Node deq = pq.poll();
+						
+			if(!visited.containsKey(deq.getStrValue()))
+				sum += deq.getNegativeDistance();
+			else
+				continue;
+				
+			visited.put(deq.getStrValue(), true);
+			ArrayList<Node> al = adj_list.get(deq.getStrValue());
+			
+			for (Node n : al) {
+				if(!visited.containsKey(n.getStrValue()))
+					pq.add(n);
+			}
+		}
+		return sum;
+	}
+	
+
 
 }
