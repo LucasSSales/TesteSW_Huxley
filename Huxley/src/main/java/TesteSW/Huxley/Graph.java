@@ -10,6 +10,7 @@ public class Graph {
 	
 	private HashMap<String, ArrayList<Node>> adj_list;
 	private HashMap<String, Integer> distances;
+	private int[][] adjmatrix;
 	
 	public Graph() {
 		this.adj_list = new HashMap<String, ArrayList<Node>>();
@@ -186,6 +187,45 @@ public class Graph {
 		}
 		return sum;
 	}
+	
+//	public void buildMatrix() {
+//		
+//		this.adjmatrix = new int[this.adj_list.size()][this.adj_list.size()];
+//		
+//		for(int i = 0; i < this.adj_list.size(); i++) {
+//			for(int j = 0; j < this.adj_list.size(); j++) {
+//				this.adjmatrix[i][j] = Integer.MAX_VALUE;
+//			}
+//		}
+//		
+//		Set<String> keys = adj_list.keySet();
+//		
+//		for(String s : keys) {
+//			ArrayList<Node> al = adj_list.get(s);
+//			for(Node n : al) {
+//				adjmatrix[Integer.parseInt(s)][Integer.parseInt(n.getStrValue())] = n.getDistance();
+//				adjmatrix[Integer.parseInt(n.getStrValue())][Integer.parseInt(s)] = n.getDistance();
+//			}
+//		}
+//		
+//		for(int i = 0; i < this.adj_list.size(); i++) {
+//			for(int j = 0; j < this.adj_list.size(); j++) {
+//				System.out.println(this.adjmatrix[i][j] + " ");
+//			}
+//		}
+//		
+//	}
+	
+//	public void floydWarshall() {
+//		
+//		for(int k = 0; k < adj_list.size(); k++) {
+//			
+//			for(int i = 0; i < )
+//			
+//			
+//		}
+//		
+//	}
 	
 
 
