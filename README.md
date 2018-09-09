@@ -20,3 +20,6 @@ https://www.thehuxley.com/problem/639?quizId=2265
 
 628 - ÁRVORE GERADORA MÁXIMA
 https://www.thehuxley.com/problem/628?locale=pt_BR
+
+821 - BITMAP
+https://www.thehuxley.com/problem/821?locale=pt_BR
