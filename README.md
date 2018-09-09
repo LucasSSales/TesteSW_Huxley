@@ -32,3 +32,9 @@ https://www.thehuxley.com/problem/1021?locale=pt_BR
 
 1848 - SUBCONJUNTOS COMPLEMENTARES
 https://www.thehuxley.com/problem/1848?quizId=2510
+
+562 - PIZZARIA
+https://www.thehuxley.com/problem/562?locale=pt_BR
+
+440 - OS SUSPEITOS
+https://www.thehuxley.com/problem/440?locale=pt_BR
