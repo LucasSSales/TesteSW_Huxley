@@ -23,3 +23,12 @@ https://www.thehuxley.com/problem/628?locale=pt_BR
 
 821 - BITMAP
 https://www.thehuxley.com/problem/821?locale=pt_BR
+
+790 - MOCHILA
+https://www.thehuxley.com/problem/790?locale=pt_BR
+
+1021 - SUPER SALES
+https://www.thehuxley.com/problem/1021?locale=pt_BR
+
+1848 - SUBCONJUNTOS COMPLEMENTARES
+https://www.thehuxley.com/problem/1848?quizId=2510
