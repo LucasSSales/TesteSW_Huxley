@@ -8,9 +8,9 @@ import java.util.Set;
 
 public class Graph {
 	
-	private HashMap<String, ArrayList<Node>> adj_list;
-	private HashMap<String, Integer> distances;
-	private int[][] adjmatrix;
+	protected HashMap<String, ArrayList<Node>> adj_list;
+	protected HashMap<String, Integer> distances;
+	protected int[][] adjmatrix;
 	
 	public Graph() {
 		this.adj_list = new HashMap<String, ArrayList<Node>>();
@@ -186,6 +186,28 @@ public class Graph {
 			}
 		}
 		return sum;
+	}
+	
+	public void bfsOsSuspeitos(String source) {
+		ArrayList<Node> queue = new ArrayList<Node>();
+		HashMap<String, Boolean> visited = new HashMap<String, Boolean>();
+		int cont = 1;
+		queue.add(new Node(source, 0));
+		visited.put(source, true);
+		
+		while(!queue.isEmpty()) {
+			Node deq = queue.remove(0);
+			
+			ArrayList<Node> al = adj_list.get(deq.getStrValue());
+			for (Node n : al) {
+				if(!visited.containsKey(n.getStrValue())) {
+					queue.add(n);
+					visited.put(n.getStrValue(), true);
+					cont += 1;
+				}
+			}
+		}
+		System.out.println(cont);
 	}
 	
 //	public void buildMatrix() {

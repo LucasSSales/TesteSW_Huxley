@@ -8,6 +8,8 @@ import Questions.ArvoreGeradoraMaxima;
 import Questions.Bitmap;
 import Questions.EnergiaXTempo;
 import Questions.Mochila;
+import Questions.OsSuspeitos;
+import Questions.Pizzaria;
 import Questions.ReduzindoMapas;
 import Questions.SubconjuntosComplementares;
 import Questions.SuperSales;
@@ -49,15 +51,15 @@ public class App
 //        31 24
 //        1
 //        26
-        
-        int[] prices = {72, 44, 31};
-        int[] weights = {17, 23, 24};
-        int[] max = {26};
-        
-        SuperSales ss = new SuperSales(prices, weights, max);
-        
-        System.out.println(ss.resolve());//72
-        
+//        
+//        int[] prices = {72, 44, 31};
+//        int[] weights = {17, 23, 24};
+//        int[] max = {26};
+//        
+//        SuperSales ss = new SuperSales(prices, weights, max);
+//        
+//        System.out.println(ss.resolve());//72
+//        
 //        6
 //        64 26
 //        85 22
@@ -70,45 +72,99 @@ public class App
 //        20
 //        20
 //        26
-        
-        int[] prices1 = {64, 85, 52, 99, 39, 54};
-        int[] weights1 = {26, 22, 4, 18, 13, 9};
-        int[] max1 = {23, 20, 20, 26};
-        
-        SuperSales ss1 = new SuperSales(prices1, weights1, max1);
-        
-        System.out.println(ss1.resolve());//514
-        
-        
+//        
+//        int[] prices1 = {64, 85, 52, 99, 39, 54};
+//        int[] weights1 = {26, 22, 4, 18, 13, 9};
+//        int[] max1 = {23, 20, 20, 26};
+//        
+//        SuperSales ss1 = new SuperSales(prices1, weights1, max1);
+//        
+//        System.out.println(ss1.resolve());//514
+//        
+//        
         /////////////////////////////////////////////////////
         
-        int[] s = {2,3,6};
+        //int[] s = {2,3,6};
         //int[] s = {2,4,6};
 //        SubconjuntosComplementares sc = new SubconjuntosComplementares(s, 7); //Yes
         //SubconjuntosComplementares sc = new SubconjuntosComplementares(s, 2); //No
-        SubconjuntosComplementares sc = new SubconjuntosComplementares(s, 11); //Yes
-        System.out.println(sc.resolve());
-        
-//        [[1, 1, 1, 1, 1], 
-//         [0, -1, -1, -1, -1], 
-//         [0, -1, -1, -1, -1],
-        
-//         [0, -1, -1, -1, -1], 
-//         [0, -1, -1, -1, -1],
-//         [0, -1, -1, -1, -1], 
-//         [0, -1, -1, -1, -1],
-        
-//         [0, -1, -1, -1, -1], 
-//         [0, -1, -1, -1, -1], 
-//         [0, -1, -1, -1, -1]]
+//        SubconjuntosComplementares sc = new SubconjuntosComplementares(s, 11); //Yes
+//        System.out.println(sc.resolve());
         
         
         
+///////////////////////////////////////////////////////////////////////////////  
+     
+        
+//        2
+        
+//        3 2
+//        2 1 230
+//        1 3 430
+        
+//        2
+//        3 2
+        
+//        3 3
+//        1 2 250
+//        1 3 928
+//        2 3 305
+//        2
+//        2 2
         
         
         
+       // Graph graph = new Graph();
+//        graph.putNode("2", new Node("1", 230));
+//        graph.putNode("1", new Node("3", 430));
+//        int[] orders = {3,2};
         
         
+//	     graph.putNode("1", new Node("2", 250));
+//	     graph.putNode("1", new Node("3", 928));
+//	     graph.putNode("2", new Node("3", 305));
+//	     int[] orders = {2,2};        
+//        
+//        
+//        Pizzaria p = new Pizzaria(graph, orders);
+        //System.out.println(p.resolve());;
+        
+ ///////////////////////////////////////////////////////////////////////////////      
+        
+//        100 4
+//        2 1 2
+//        5 10 13 11 12 14
+//        2 0 1
+//        2 99 2
+        
+//        200 2
+//        1 5
+//        5 1 2 3 4 5
+        
+//        1 0 //1
+        
+//        0 0
+//        
+        
+        
+        Graph graph = new Graph();
+                
+//        for(int i = 0; i < 100; i++)
+//        	graph.putNode(source, destiny);
+        
+	    graph.putNode("10", new Node("13", 250));
+	    graph.putNode("13", new Node("11", 928));
+	    graph.putNode("11", new Node("12", 305));
+	    graph.putNode("12", new Node("14", 250));
+	    graph.putNode("14", new Node("10", 928));
+	    
+	    graph.putNode("1", new Node("2", 305));
+	    graph.putNode("0", new Node("1", 305));
+	    
+	    graph.putNode("99", new Node("2", 305));
+
+        OsSuspeitos s = new OsSuspeitos(graph, 100, 4);
+        s.resolve();
         
         
         
