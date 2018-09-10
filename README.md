@@ -41,3 +41,6 @@ https://www.thehuxley.com/problem/440?locale=pt_BR
 
 557 - MULTIPLICAÇÃO DE MATRIZES DE FORMA ÓTIMA
 https://www.thehuxley.com/problem/557
+
+893 - DADOS DA SORTE
+https://www.thehuxley.com/problem/893?locale=pt_BR
