@@ -1,44 +1,35 @@
 ﻿Possiveis questoes:
 
+Orkut
+https://www.thehuxley.com/problem/603?locale=pt_BR
+
+Costa
+https://www.thehuxley.com/problem/213
+
+Cadeiras do Auditorio
+https://www.thehuxley.com/problem/173?locale=pt_BR
+
+Campo Minado
+https://www.thehuxley.com/problem/124?locale=pt_BR
+
+Snake
+https://www.thehuxley.com/problem/774?locale=pt_BR
+
+====================================================================================================
 Horario dos onibus
 https://www.thehuxley.com/problem/738
 
-Orkut
-https://www.thehuxley.com/problem/603/submission/980490?locale=pt_BR
-
-Quase menor caminho
-https://www.thehuxley.com/problem/1264?quizId=2231
-
-wacky races
+Wacky races
 https://www.thehuxley.com/problem/1075
 
 Rede de telecomunicações
 https://www.thehuxley.com/problem/462
 
-Costa
-https://www.thehuxley.com/problem/213
+Quase menor caminho
+https://www.thehuxley.com/problem/1264?quizId=2231
 
-Dados da sorte
-https://www.thehuxley.com/problem/893/submission/614668?locale=pt_BR
-
-====================================================================================================
-Da raiz ate a folha
-https://www.thehuxley.com/problem/968?locale=pt_BR
-Em cada nivel da arvore
-https://www.thehuxley.com/problem/949?quizId=1869
-Copa do Mundo
-https://www.thehuxley.com/problem/640/code-editor/?locale=pt_BR
-Chaves
-https://www.thehuxley.com/problem/816?locale=pt_BR
 Fortaleza Digital
 https://www.thehuxley.com/problem/797?locale=pt_BR
-Campo Minado
-https://www.thehuxley.com/problem/124?locale=pt_BR
-Snake
-https://www.thehuxley.com/problem/774?locale=pt_BR
-##frete
-##https://www.thehuxley.com/problem/1997?locale=pt_BR
-#Busca em largura
-#https://www.thehuxley.com/problem/805?quizId=1732
+
 Passeio de jipeiros
 https://www.thehuxley.com/problem/1025?locale=pt_BR
