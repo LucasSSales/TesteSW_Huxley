@@ -7,9 +7,11 @@ import java.util.Set;
 import Questions.AdegaDeVinhos;
 import Questions.ArvoreGeradoraMaxima;
 import Questions.Bitmap;
-import Questions.CadeirasDoAuditorio;
+import Questions.Costa;
+//import Questions.CadeirasDoAuditorio;
 import Questions.DadosDaSorte;
 import Questions.EnergiaXTempo;
+import Questions.Frete;
 //import Questions.HorarioDosOnibus;
 import Questions.Mochila;
 import Questions.MultMatrizes;
@@ -239,9 +241,9 @@ public class App
 ////////////////////////////////////////////////////////////////////////////////////
         
         
-        int[][] matrix = {{4,3},{2,1}};
-        CadeirasDoAuditorio ca = new CadeirasDoAuditorio(matrix);
-        System.out.println(ca.resolve());
+//        int[][] matrix = {{4,3},{2,1}};
+//        CadeirasDoAuditorio ca = new CadeirasDoAuditorio(matrix);
+//        System.out.println(ca.resolve());
         
         
 ////////////////////////////////////////////////////////////////////////////////////
@@ -284,11 +286,59 @@ public class App
 
         
         
+////////////////////////////////////////////////////////////////////////////////////  
+        
+        char[][] mapa = {
+        		{'#', '#', '#', '#', '#'}, 
+        		{'#', '.', '.', '.', '#'}, 
+        		{'.', '.', '.', '.', '.'}, 
+        		{'#', '.', '.', '.', '.'}, 
+        		{'#', '#', '.', '.', '#'}};
+        
+        
+        Costa c = new Costa(mapa);
+        System.out.println(c.resolve());
         
         
         
+//        7 10
+        int[][] x = {{1, 2, 5},
+        {3, 1, 32},
+        {1, 4, 3},
+        {2, 3, 4},
+        {2, 6, 20},
+        {6, 3, 1},
+        {6, 4, 9},
+        {6, 5, 6},
+        {3, 7, 18},
+        {5, 7, 2}};
         
+//        5 6
+//        1 2 4
+//        1 3 3
+//        4 3 6
+//        4 5 2
+//        2 4 1
+//        3 5 5
+
         
+//        Graph g = new Graph();
+//        
+//        for(int i = 0; i<x.length; i++) {
+//        	g.putNode(Integer.toString(x[i][0]), new Node(Integer.toString(x[i][1]), x[i][2]));
+//        	System.out.println(x[i][0] + " " + x[i][1] + " " + x[i][2]);
+//        }
+//        g.printGraph();
+//        HashMap<String, Integer> d = g.dijkstra("1");
+//        
+//        Set<String> k = d.keySet();
+//        for(String s : k)
+//        	System.out.println(s + " " + d.get(s));
+//        
+//        System.out.println(d.get(""+d.size()));
+        
+        Frete f = new Frete(x);
+        System.out.println(f.resolve());
         
         
         
