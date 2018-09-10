@@ -1,5 +1,5 @@
 # TesteSW_Huxley
-Trabalho para disciplina de Teste de Software (18/20)
+Trabalho para disciplina de Teste de Software (20/20)
 
 Questões:
 
@@ -56,3 +56,9 @@ https://www.thehuxley.com/problem/173
 
 603 - ORKUT
 https://www.thehuxley.com/problem/603
+
+213 - COSTA
+https://www.thehuxley.com/problem/213
+
+1997 - FRETE
+https://www.thehuxley.com/problem/1997?locale=pt_BR
