@@ -6,6 +6,7 @@ import java.util.HashMap;
 import Questions.AdegaDeVinhos;
 import Questions.ArvoreGeradoraMaxima;
 import Questions.Bitmap;
+import Questions.DadosDaSorte;
 import Questions.EnergiaXTempo;
 //import Questions.HorarioDosOnibus;
 import Questions.Mochila;
@@ -201,6 +202,15 @@ public class App
         MultMatrizes mm = new MultMatrizes(values);
         
         System.out.println(mm.resolve());
+        
+//////////////////////////////////////////////////////////////////////////////////
+        
+        
+        DadosDaSorte ds = new DadosDaSorte(1, 8);
+        System.out.println(ds.resolve());
+        DadosDaSorte ds1 = new DadosDaSorte(2, 11);
+        System.out.println(ds1.resolve());
+        
         
 
     }
