@@ -6,11 +6,13 @@ import java.util.HashMap;
 import Questions.AdegaDeVinhos;
 import Questions.ArvoreGeradoraMaxima;
 import Questions.Bitmap;
+import Questions.CadeirasDoAuditorio;
 import Questions.DadosDaSorte;
 import Questions.EnergiaXTempo;
 //import Questions.HorarioDosOnibus;
 import Questions.Mochila;
 import Questions.MultMatrizes;
+import Questions.Orkut;
 import Questions.OsSuspeitos;
 import Questions.Palindromo;
 import Questions.Pizzaria;
@@ -233,7 +235,21 @@ public class App
         
         
         
+////////////////////////////////////////////////////////////////////////////////////
         
+        
+        int[][] matrix = {{4,3},{2,1}};
+        CadeirasDoAuditorio ca = new CadeirasDoAuditorio(matrix);
+        System.out.println(ca.resolve());
+        
+        
+////////////////////////////////////////////////////////////////////////////////////
+        
+        
+        int[] friends = {"Joao", "Maria", "Tadeu", "Jose", "Ricardo"};
+        
+        Orkut o = new Orkut(friends);
+
         
         
         
