@@ -7,7 +7,9 @@ import Questions.AdegaDeVinhos;
 import Questions.ArvoreGeradoraMaxima;
 import Questions.Bitmap;
 import Questions.EnergiaXTempo;
+//import Questions.HorarioDosOnibus;
 import Questions.Mochila;
+import Questions.MultMatrizes;
 import Questions.OsSuspeitos;
 import Questions.Pizzaria;
 import Questions.ReduzindoMapas;
@@ -146,32 +148,59 @@ public class App
 //        0 0
 //        
         
+//        
+//        Graph graph = new Graph();
+//                
+////        for(int i = 0; i < 100; i++)
+////        	graph.putNode(source, destiny);
+//        
+//	    graph.putNode("10", new Node("13", 250));
+//	    graph.putNode("13", new Node("11", 928));
+//	    graph.putNode("11", new Node("12", 305));
+//	    graph.putNode("12", new Node("14", 250));
+//	    graph.putNode("14", new Node("10", 928));
+//	    
+//	    graph.putNode("1", new Node("2", 305));
+//	    graph.putNode("0", new Node("1", 305));
+//	    
+//	    graph.putNode("99", new Node("2", 305));
+//
+//        OsSuspeitos s = new OsSuspeitos(graph, 100, 4);
+//        s.resolve();
+//        
         
-        Graph graph = new Graph();
-                
-//        for(int i = 0; i < 100; i++)
-//        	graph.putNode(source, destiny);
+/////////////////////////////////////////////////////////////////////////////
+//PARADA ATE SEGUNDA ORDEM
+//        Cavaleiro Tancredo 50 5
+//        Cavaleiro Barro 12
+//        Barro Macaxeira 30
+//        Macaxeira Tancredo 15
+//        Barro Joana 5
+//        Joana Tancredo 24
         
-	    graph.putNode("10", new Node("13", 250));
-	    graph.putNode("13", new Node("11", 928));
-	    graph.putNode("11", new Node("12", 305));
-	    graph.putNode("12", new Node("14", 250));
-	    graph.putNode("14", new Node("10", 928));
-	    
-	    graph.putNode("1", new Node("2", 305));
-	    graph.putNode("0", new Node("1", 305));
-	    
-	    graph.putNode("99", new Node("2", 305));
-
-        OsSuspeitos s = new OsSuspeitos(graph, 100, 4);
-        s.resolve();
+//        
+//        HorarioDosOnibus hdo = new HorarioDosOnibus();
+//        
+//        hdo.putNode("Cavaleiro", new Node("Barro", 12));
+//        hdo.putNode("Barro", new Node("Macaxeira", 12));
+//        hdo.putNode("Macaxeira", new Node("Tancredo", 12));
+//        hdo.putNode("Barro", new Node("Joana", 12));
+//        hdo.putNode("Joana", new Node("Tancredo", 12));
+//        
+//        hdo.resolve("Cavaleiro", "Tancredo");
         
-        
-        
-        
-        
+//NAO COMPLETADA
         
         
+//////////////////////////////////////////////////////////////////////////////
+        
+        //int[] values = {1,5,20,1}; //(A1 x (A2 x A3))
+        int[] values = {5,10,20,35}; // ((A1 x A2) x A3)
+        //int[] values = {30,35,15,5,10,20,25}; // ((A1 x (A2 x A3)) x ((A4 x A5) x A6))
+        
+        MultMatrizes mm = new MultMatrizes(values);
+        
+        System.out.println(mm.resolve());
         
 
     }

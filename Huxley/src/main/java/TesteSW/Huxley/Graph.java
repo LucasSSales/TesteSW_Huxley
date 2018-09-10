@@ -44,7 +44,7 @@ public class Graph {
 		}
 	}
 	
-	private void setDistances() {
+	protected void setDistances() {
 		for(String s : adj_list.keySet()) {
 			distances.put(s, new Integer(Integer.MAX_VALUE));
 		}
