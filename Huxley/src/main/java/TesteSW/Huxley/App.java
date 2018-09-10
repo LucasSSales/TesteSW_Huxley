@@ -17,6 +17,7 @@ import Questions.Pizzaria;
 import Questions.ReduzindoMapas;
 import Questions.SubconjuntosComplementares;
 import Questions.SuperSales;
+import Questions.TabuleiroEsburacado;
 
 /**
  * Hello world!
@@ -215,11 +216,41 @@ public class App
 ////////////////////////////////////////////////////////////////////////////////////
         
         
-        //Palindromo p = new Palindromo("");//0
-        //Palindromo p = new Palindromo("ADAM");//3
-        Palindromo p = new Palindromo("MADAM");//5
-        //Palindromo p = new Palindromo("");
-        System.out.println(p.resolve());
-
+//        //Palindromo p = new Palindromo("");//0
+//        //Palindromo p = new Palindromo("ADAM");//3
+//        Palindromo p = new Palindromo("MADAM");//5
+//        //Palindromo p = new Palindromo("");
+//        System.out.println(p.resolve());
+////////////////////////////////////////////////////////////////////////////////////
+        
+        int[] moves = {2, 4, 7, 8, 8, 5, 4, 3, 8, 8};
+        //int[] moves = {};
+        //int[] moves = {};
+        
+        TabuleiroEsburacado te = new TabuleiroEsburacado(moves);
+        System.out.println(te.resolve());
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }
