@@ -12,6 +12,7 @@ import Questions.EnergiaXTempo;
 import Questions.Mochila;
 import Questions.MultMatrizes;
 import Questions.OsSuspeitos;
+import Questions.Palindromo;
 import Questions.Pizzaria;
 import Questions.ReduzindoMapas;
 import Questions.SubconjuntosComplementares;
@@ -195,23 +196,30 @@ public class App
         
 //////////////////////////////////////////////////////////////////////////////
         
-        //int[] values = {1,5,20,1}; //(A1 x (A2 x A3))
-        int[] values = {5,10,20,35}; // ((A1 x A2) x A3)
-        //int[] values = {30,35,15,5,10,20,25}; // ((A1 x (A2 x A3)) x ((A4 x A5) x A6))
+//        //int[] values = {1,5,20,1}; //(A1 x (A2 x A3))
+//        int[] values = {5,10,20,35}; // ((A1 x A2) x A3)
+//        //int[] values = {30,35,15,5,10,20,25}; // ((A1 x (A2 x A3)) x ((A4 x A5) x A6))
+//        
+//        MultMatrizes mm = new MultMatrizes(values);
+//        
+//        System.out.println(mm.resolve());
+//        
+////////////////////////////////////////////////////////////////////////////////////
+//        
+//        
+//        DadosDaSorte ds = new DadosDaSorte(1, 8);
+//        System.out.println(ds.resolve());
+//        DadosDaSorte ds1 = new DadosDaSorte(2, 11);
+//        System.out.println(ds1.resolve());
         
-        MultMatrizes mm = new MultMatrizes(values);
-        
-        System.out.println(mm.resolve());
-        
-//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
         
         
-        DadosDaSorte ds = new DadosDaSorte(1, 8);
-        System.out.println(ds.resolve());
-        DadosDaSorte ds1 = new DadosDaSorte(2, 11);
-        System.out.println(ds1.resolve());
-        
-        
+        //Palindromo p = new Palindromo("");//0
+        //Palindromo p = new Palindromo("ADAM");//3
+        Palindromo p = new Palindromo("MADAM");//5
+        //Palindromo p = new Palindromo("");
+        System.out.println(p.resolve());
 
     }
 }
