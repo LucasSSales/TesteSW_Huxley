@@ -44,3 +44,6 @@ https://www.thehuxley.com/problem/557
 
 893 - DADOS DA SORTE
 https://www.thehuxley.com/problem/893?locale=pt_BR
+
+1022 - PALINDROMO
+https://www.thehuxley.com/problem/1022?quizId=2265
