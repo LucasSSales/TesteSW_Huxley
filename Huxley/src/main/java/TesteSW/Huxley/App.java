@@ -2,6 +2,7 @@ package TesteSW.Huxley;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 import Questions.AdegaDeVinhos;
 import Questions.ArvoreGeradoraMaxima;
@@ -246,9 +247,40 @@ public class App
 ////////////////////////////////////////////////////////////////////////////////////
         
         
-        int[] friends = {"Joao", "Maria", "Tadeu", "Jose", "Ricardo"};
+        String[] friends = {"Joao", "Maria", "Tadeu", "Jose", "Ricardo"};
         
         Orkut o = new Orkut(friends);
+        
+        HashMap<String, Integer> in = new HashMap<>();
+        in.put("Joao", 2);
+        in.put("Maria", 1);
+        in.put("Jose", 1);
+        in.put("Tadeu", 0);
+        in.put("Ricardo", 0);
+        
+        
+         //Joao 2 Maria Ricardo 
+         //Maria 1 Tadeu 
+         //Jose 1 Joao 
+         //Tadeu 0 
+         //Ricardo 0
+         
+         o.putNode("Maria", new Node("Joao", 1));
+         o.putNode("Ricardo", new Node("Joao", 1));
+         o.putNode("Tadeu", new Node("Maria", 1));
+         o.putNode("Joao", new Node("Jose", 1));
+         //o.putNode("", new Node("Tadeu", 1));
+         //o.putNode("", new Node("Ricardo", 1));
+         
+//         Joao Maria Renata
+//         Maria 1 Joao
+//         Joao 1 Renata
+//         Renata 1 Maria
+
+         
+        
+        o.setIndegrees(in);
+        System.out.println(o.resolve());
 
         
         

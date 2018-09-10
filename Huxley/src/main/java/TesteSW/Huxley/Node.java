@@ -37,6 +37,10 @@ public class Node {
 		return "(" + this.strValue + " , " + this.distance + ")";
 	}
 	
+	protected void setDistance(int distance) {
+		this.distance = distance;
+	}
+	
 	
 
 	
