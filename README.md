@@ -38,3 +38,6 @@ https://www.thehuxley.com/problem/562?locale=pt_BR
 
 440 - OS SUSPEITOS
 https://www.thehuxley.com/problem/440?locale=pt_BR
+
+557 - MULTIPLICAÇÃO DE MATRIZES DE FORMA ÓTIMA
+https://www.thehuxley.com/problem/557
