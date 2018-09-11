@@ -1,9 +1,9 @@
 # TesteSW_Huxley
-Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 13/20)
+Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 14/20)
 
 Questões:
 
-474 - ROTAS DE ENTREGA
+*474 - ROTAS DE ENTREGA
 https://www.thehuxley.com/problem/474?quizId=2127
 
 *874 - CORTE DE HASTES
