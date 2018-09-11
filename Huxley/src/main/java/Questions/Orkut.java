@@ -42,9 +42,11 @@ public class Orkut extends Graph{
 		adj_list.get(source).add(destiny);
 	}
 	
+	public void putIndegrees(String vertex, int indegree) {
+		this.indegrees.put(vertex, indegree);
+	}
 	
-	
-	public String topologicalSort() {
+	private String topologicalSort() {
 		
 		ArrayList<String> queue = new ArrayList<String>();
 		for(String s: friends) {
@@ -55,7 +57,7 @@ public class Orkut extends Graph{
 		ArrayList<String> stack = new ArrayList<String>();
 		
 		if(queue.isEmpty())
-			return "impossivel";
+			return "impossivel\n";
 		else {
 			int conf=0;
 			while(!queue.isEmpty()) {
@@ -78,7 +80,7 @@ public class Orkut extends Graph{
 			}
 			
 			if(conf == 1 || stack.size() != adj_list.size())
-				return "impossivel";
+				return "impossivel\n";
 			else {
 				String o = "";
 				int cont = 0;
@@ -93,4 +95,17 @@ public class Orkut extends Graph{
 			}
 		}
 	}
+
+	public HashMap<String, Integer> getIndegrees() {
+		return indegrees;
+	}
+
+	public HashMap<String, Boolean> getVisited() {
+		return visited;
+	}
+
+	public String[] getFriends() {
+		return friends;
+	}
+	
 }

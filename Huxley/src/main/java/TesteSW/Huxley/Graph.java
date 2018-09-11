@@ -221,4 +221,14 @@ public class Graph {
 		return cont;
 	}
 
+	public HashMap<String, ArrayList<Node>> getAdj_list() {
+		return adj_list;
+	}
+
+	public HashMap<String, Integer> getDistances() {
+		return distances;
+	}
+	
+	
+
 }
