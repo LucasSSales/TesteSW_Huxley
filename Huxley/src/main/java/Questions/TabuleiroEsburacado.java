@@ -59,58 +59,22 @@ public class TabuleiroEsburacado {
 	    }
 	}
 
-}
+	public int getCont() {
+		return cont;
+	}
 
-//
-//#include <stdio.h>
-//int tab_esb (int movs[], int num, int cont[], int ind[], int i[], int j[])
-//{
-//    int k = ind[0];
-//    if (k==num || ((i[0]==3 && j[0]==1) || (i[0]==3 && j[0]==2) || (i[0]==5 && j[0]==2) || (i[0]==4 && j[0]==5)))
-//    {
-//        return cont[0];
-//    }
-//    else
-//    {
-//        if (movs[k]==1){
-//            i[0]+=2;
-//            j[0]+=1;}
-//        else if (movs[k]==2){
-//            j[0]+=2;
-//            i[0]+=1;}
-//        else if (movs[k]==3){
-//            j[0]+=2;
-//            i[0]-=1;}
-//        else if (movs[k]==4){
-//            i[0]-=2;
-//            j[0]+=1;}
-//        else if (movs[k]==5){
-//            i[0]-=2;
-//            j[0]-=1;}
-//        else if (movs[k]==6){
-//            j[0]-=2;
-//            i[0]-=1;}
-//        else if (movs[k]==7){
-//            j[0]-=2;
-//            i[0]+=1;}
-//        else if (movs[k]==8){
-//            i[0]+=2;
-//            j[0]-=1;}
-//        cont[0]+=1;
-//        ind[0]+=1;
-//        tab_esb(movs, num, cont, ind, i, j);
-//    }
-//}
-//int main ()
-//{
-//    int num, i[1]={3}, j[1]={4}, cont[1]={0}, saida, k[1]={0}, c;
-//    scanf("%d\n", &num);
-//    int movs[num];
-//    for (c=0; c<num; c++)
-//    {
-//        scanf("%d", &movs[c]);
-//    }
-//    saida = tab_esb(movs, num, cont, k, i, j);
-//    printf("%d\n", saida);
-//    return 0;
-//}
+	public HashMap<String, Boolean> getHoles() {
+		return holes;
+	}
+
+	public int[] getMovs() {
+		return movs;
+	}
+
+	public int getNum() {
+		return num;
+	}
+	
+	
+
+}

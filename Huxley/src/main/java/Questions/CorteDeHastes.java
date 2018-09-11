@@ -33,4 +33,16 @@ public class CorteDeHastes {
 		return memo[values.length];		
 	}
 
+	public int[] getMemo() {
+		return memo;
+	}
+
+	public int getCases() {
+		return cases;
+	}
+
+	public int[] getValues() {
+		return values;
+	}
+
 }

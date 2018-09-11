@@ -38,19 +38,19 @@ public class AdegaDeVinhos {
 			return this.memo[left][right];
 		}
 	}
-	
 
+	public int[][] getMemo() {
+		return memo;
+	}
+
+	public int getBottles() {
+		return bottles;
+	}
+
+	public int[] getPrice() {
+		return price;
+	}
 	
 	
-//	def adega(price, left, right, year):
-//	    global memo
-//	    if(memo[left][right]!=-1):
-//	        return memo[left][right]
-//	    if(left == right):
-//	        memo[left][right] = price[left]*year
-//	        return memo[left][right]
-//	    else:
-//	        memo[left][right] = max( price[left]*year+adega(price, left+1, right, year+1) , price[right]*year + adega(price, left, right-1, year+1) )
-//	        return memo[left][right]
 
 }
