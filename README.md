@@ -1,5 +1,5 @@
 # TesteSW_Huxley
-Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 15/20)
+Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 16/20)
 
 Questões:
 
@@ -12,7 +12,7 @@ https://www.thehuxley.com/problem/874?quizId=2265
 *602 - ADEGA DE VINHOS
 https://www.thehuxley.com/problem/602?quizId=2265
 
-171 - REDUZINDO MAPAS
+*171 - REDUZINDO MAPAS
 https://www.thehuxley.com/problem/171?locale=pt_BR
 
 *639 - ENERGIA X TEMPO
