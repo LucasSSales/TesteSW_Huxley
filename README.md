@@ -1,5 +1,5 @@
 # TesteSW_Huxley
-Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 16/20)
+Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 18/20)
 
 Questões:
 
@@ -60,5 +60,5 @@ https://www.thehuxley.com/problem/603
 *213 - COSTA
 https://www.thehuxley.com/problem/213
 
-1997 - FRETE
+*1997 - FRETE
 https://www.thehuxley.com/problem/1997?locale=pt_BR
