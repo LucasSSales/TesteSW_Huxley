@@ -8,48 +8,54 @@ import java.util.Set;
 
 public class Graph {
 	
+	//ESSA CLASSE GRAPH É IMPLEMENTADA USANDO UMA HashMap<String, ArrayList<Node>> COMO LISTA DE ADJACENCIA
+	//TODAS OS VERTICES DEVEM SER STRINGS
 	protected HashMap<String, ArrayList<Node>> adj_list;
 	protected HashMap<String, Integer> distances;
-	protected int[][] adjmatrix;
 	
 	public Graph() {
 		this.adj_list = new HashMap<String, ArrayList<Node>>();
 		this.distances = new HashMap<String, Integer>();
 	}
 	
+	//CONSTRUTOR QUE RECEBE UMA HASHMAP PRONTA
 	public Graph(HashMap<String, ArrayList<Node>> adj_list) {
 		this.adj_list = adj_list;
 		this.distances = new HashMap<String, Integer>();
 	}
-			
-	public void putNode(String source, Node destiny) {
+	
+	//ADICIONA DE MANEIRA NAO-DIRECIONADA NÓS AO GRAFO
+	//RECEBE UMA STRING CHAVE E UM NODE DE VALOR PARA ADICIONAR
+	//RETORNA TRUE SE AMBOS OS NÓS FOREM ADICIONADOS
+	public boolean putNode(String source, Node destiny) {
 		if( !adj_list.containsKey(source) )
 			adj_list.put(source, new ArrayList<Node>());
 		
 		if( !adj_list.containsKey(destiny.getStrValue()) )
 			adj_list.put(destiny.getStrValue(), new ArrayList<Node>());
 		
-		adj_list.get(source).add(destiny);
-		adj_list.get(destiny.getStrValue()).add(new Node(source, destiny.getDistance()));
+		return adj_list.get(source).add(destiny) && adj_list.get(destiny.getStrValue()).add(new Node(source, destiny.getDistance()));
 	}
 	
+	//ADICIONA VERTICES AO GRAFO
+	//RECEBE O VALOR EM STRING DO VERTICE A SER ADICIONADO
 	public void putVertex(String vertex) {
-		if(!this.adj_list.containsKey(vertex)) {
+		if(!this.adj_list.containsKey(vertex))
 			this.adj_list.put(vertex, new ArrayList<Node>());
-		}
-			
 	}
 	
-	public void printGraph() {
-		Set<String> keys = adj_list.keySet();
-		for (String s : keys) {
-			ArrayList<Node> al = adj_list.get(s);
-			System.out.print(s + " -> ");
-			for (Node n : al) 
-				System.out.print(n + " ");
-			System.out.println("");
-		}
-	}
+//	//FUNÇÃO PARA IMPRIMIR O GRAFO
+//	public void printGraph() {
+//		Set<String> keys = adj_list.keySet();
+//		for (String s : keys) {
+//			ArrayList<Node> al = adj_list.get(s);
+//			System.out.print(s + " -> ");
+//			for (Node n : al) 
+//				System.out.print(n + " ");
+//			System.out.println("");
+//		}
+//	}
+	
 	
 	protected void setDistances() {
 		for(String s : adj_list.keySet()) {
@@ -57,6 +63,7 @@ public class Graph {
 		}
 	}
 	
+	//RETORNA A LISTA DE CHAVES DA LISTA DE ADJACENCIA
 	public Set<String> keys() {
 		return this.adj_list.keySet();
 	}
@@ -103,6 +110,9 @@ public class Graph {
 //		
 //	}
 	
+	//FUNÇÃO QUE EXECUTA O ALGORITMO DE DIJKSTRA
+	//RECEBE UM VERTICE DE PARTIDA
+	//RETORNA UMA HashMap<String, Integer> DE VERTICES E MENORES DISTANCIAS DELES ATE A PARTIDA
 	public HashMap<String, Integer> dijkstra(String source) {
 		
 		Comparator<Node> c = new Comparator<Node>() {
@@ -138,7 +148,9 @@ public class Graph {
 		
 	}
 	
-	
+	//FUNÇÃO PARA OBTER ARVORE GERADORA MINIMA
+	//RECEBE O VERTICE DE PARTIDA
+	//RETORNA O VALOR DA MST
 	public int mst (String source) {
 		Comparator<Node> c = new Comparator<Node>() {
 			public int compare(Node n1, Node n2) {			
@@ -169,6 +181,8 @@ public class Graph {
 		return sum;
 	}
 	
+	//FUNÇÃO PARA RETORNA A ARVORE GERADORA MÁXIMA
+	//SIMILIAR A MST, COM O DIFERENCIAL DE RECEBER VALORES NEGATIVOS PARA DISTANCIAS
 	public int maxst (String source) {
 		Comparator<Node> c = new Comparator<Node>() {
 			public int compare(Node n1, Node n2) {			
@@ -199,6 +213,7 @@ public class Graph {
 		return sum;
 	}
 	
+	//BFS UTILIZADA NA QUESTÃO OS SUSPEITOS
 	public int bfsOsSuspeitos(String source) {
 		ArrayList<Node> queue = new ArrayList<Node>();
 		HashMap<String, Boolean> visited = new HashMap<String, Boolean>();

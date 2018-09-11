@@ -35,11 +35,11 @@ public class Orkut extends Graph{
 	}
 	
 	@Override
-	public void putNode(String source, Node destiny) {
+	public boolean putNode(String source, Node destiny) {
 		if( !adj_list.containsKey(source) )
 			adj_list.put(source, new ArrayList<Node>());
 		
-		adj_list.get(source).add(destiny);
+		return adj_list.get(source).add(destiny);
 	}
 	
 	public void putIndegrees(String vertex, int indegree) {
