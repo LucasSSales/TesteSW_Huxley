@@ -29,7 +29,7 @@ public class MultMatrizes {
 	}
 	
 	public String resolve() {
-		if(this.values.length == 1)
+		if(this.n == 1)
 			return "(A1)";
 		else {
 			this.setTable(this.n);
@@ -38,7 +38,7 @@ public class MultMatrizes {
 		}
 	}
 	
-	public void setTable(int n) {
+	private void setTable(int n) {
 		for (int i = 0; i < n; i++) {
 			int aux = 0;
 			for (int j = i; j < n; j++) {
@@ -60,7 +60,7 @@ public class MultMatrizes {
 		}
 	}
 	
-	public void defOrder(int begin, int end) {
+	private void defOrder(int begin, int end) {
 		if(begin > end)
 			return;
 		if(begin == end)
@@ -76,7 +76,7 @@ public class MultMatrizes {
 		}
 	}
 	
-	public String printOrder(int n) {
+	private String printOrder(int n) {
 		String s = "";
 		for(int i = 0; i < n; i++) {
 			s +=pOpen[i];
@@ -89,30 +89,30 @@ public class MultMatrizes {
 		}
 		return s;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	public int[][] getCost() {
+		return cost;
+	}
+
+	public int[] getValues() {
+		return values;
+	}
+
+	public int[][] getTopological() {
+		return topological;
+	}
+
+	public String[] getpOpen() {
+		return pOpen;
+	}
+
+	public String[] getpClose() {
+		return pClose;
+	}
+
+	public int getN() {
+		return n;
+	}
+		
 
 }

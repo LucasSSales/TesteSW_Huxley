@@ -12,7 +12,6 @@ import Questions.Costa;
 import Questions.DadosDaSorte;
 import Questions.EnergiaXTempo;
 import Questions.Frete;
-//import Questions.HorarioDosOnibus;
 import Questions.Mochila;
 import Questions.MultMatrizes;
 import Questions.Orkut;
@@ -116,30 +115,7 @@ public class App
 //
 //        OsSuspeitos s = new OsSuspeitos(graph, 100, 4);
 //        s.resolve();
-//        
-        
-/////////////////////////////////////////////////////////////////////////////
-//PARADA ATE SEGUNDA ORDEM
-//        Cavaleiro Tancredo 50 5
-//        Cavaleiro Barro 12
-//        Barro Macaxeira 30
-//        Macaxeira Tancredo 15
-//        Barro Joana 5
-//        Joana Tancredo 24
-        
-//        
-//        HorarioDosOnibus hdo = new HorarioDosOnibus();
-//        
-//        hdo.putNode("Cavaleiro", new Node("Barro", 12));
-//        hdo.putNode("Barro", new Node("Macaxeira", 12));
-//        hdo.putNode("Macaxeira", new Node("Tancredo", 12));
-//        hdo.putNode("Barro", new Node("Joana", 12));
-//        hdo.putNode("Joana", new Node("Tancredo", 12));
-//        
-//        hdo.resolve("Cavaleiro", "Tancredo");
-        
-//NAO COMPLETADA
-        
+//              
         
 //////////////////////////////////////////////////////////////////////////////
         

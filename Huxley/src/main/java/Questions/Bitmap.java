@@ -55,6 +55,18 @@ public class Bitmap {
 		}
 		return v;
 	}
+
+	public int[][] getMatrix() {
+		return matrix;
+	}
+
+	public String getBitmap() {
+		return bitmap;
+	}
+
+	public int getCont() {
+		return cont;
+	}
 	
 }
 

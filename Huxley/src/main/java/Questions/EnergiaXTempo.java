@@ -53,6 +53,28 @@ public class EnergiaXTempo {
 		}
 		memo[prog][freq] = min;
 		return min;
+	}
+
+	public int[][] getMemo() {
+		return memo;
+	}
+
+	public int[][] getTable() {
+		return table;
+	}
+
+	public int getFreq() {
+		return freq;
+	}
+
+	public int getProg() {
+		return prog;
+	}
+
+	public int getMudarF() {
+		return mudarF;
 	}	
+	
+	
 
 }

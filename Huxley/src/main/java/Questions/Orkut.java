@@ -27,8 +27,6 @@ public class Orkut extends Graph{
 	}
 	
 	public String resolve() {
-		
-
 		return this.topologicalSort();
 	}
 	

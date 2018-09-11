@@ -25,14 +25,6 @@ public class Node {
 	
 	public String toString() {
 		return "(" + this.strValue + " , " + this.distance + ")";
-	}
-	
-	protected void setDistance(int distance) {
-		this.distance = distance;
-	}
-	
-	
-
-	
+	}	
 
 }
