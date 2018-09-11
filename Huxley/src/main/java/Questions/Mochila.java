@@ -28,7 +28,7 @@ public class Mochila {
 		return this.mochilaSolved(0, this.maxCapacity);
 	}
 	
-	public int mochilaSolved(int item, int peso) {
+	private int mochilaSolved(int item, int peso) {
 		
 		if(this.memo[item][peso] != -1)
 			return this.memo[item][peso];
@@ -45,23 +45,21 @@ public class Mochila {
 			return memo[item][peso];
 		}
 	}
-	
-	public String arrays() {
-		String s="[";
-		for(int i = 0; i < prices.length; i++) {
-			s += prices[i];
-			if(i == prices.length-1)
-				s+="]";
-			else
-				s+=",";
-		}
-		return s;
+
+	public int[] getPrices() {
+		return prices;
 	}
-	
-//	@Override
-//	public String toString() {
-//		return "Mochila: " + this.maxCapacity + "\n"
-//				+ "Prices: " + this.arrays() + "\n";
-//	}
+
+	public int[] getWeights() {
+		return weights;
+	}
+
+	public int getMaxCapacity() {
+		return maxCapacity;
+	}
+
+	public int getNumberOfItems() {
+		return numberOfItems;
+	}	
 
 }

@@ -21,6 +21,8 @@ public class Frete extends Graph{
     
 	
 	public int resolve() {
+		if(nodes.length == 0)
+			return 0;
 		distances = dijkstra("1");
 		return distances.get(""+(distances.size()));
 	}

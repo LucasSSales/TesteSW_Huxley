@@ -3,14 +3,8 @@ package TesteSW.Huxley;
 public class Node {
 	
 	private Integer distance;
-	//private int intValue;
 	private String strValue;
 	boolean visited = false;
-	
-//	public Node(int value, int distance) {
-//		this.distance = distance;
-//		this.intValue = value;
-//	}
 	
 	public Node(String value, int distance) {
 		this.distance = distance;
@@ -24,10 +18,6 @@ public class Node {
 	public Integer getNegativeDistance() {
 		return -distance;
 	}
-
-//	public int getIntValue() {
-//		return intValue;
-//	}
 
 	public String getStrValue() {
 		return strValue;
