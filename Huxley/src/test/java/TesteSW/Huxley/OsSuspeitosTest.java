@@ -110,15 +110,10 @@ class OsSuspeitosTest {
 	    	graph.putVertex(""+i);
 	    
 	    for(int i = 0; i < test.length; i++) {
-	    	for(int j = 0; j < test[i].length; j++) {
-	    		System.out.print(test[i][j] + " ");
+	    	for(int j = 1; j < test[i].length; j++) {
+	    		graph.putNode(""+test[i][0], new Node(""+test[i][j], 1));
 	    	}
 	    }
-	    
-		graph.putNode("1", new Node("2", 1));
-		graph.putNode("1", new Node("3", 1));
-		graph.putNode("1", new Node("4", 1));
-		graph.putNode("1", new Node("5", 1));
 				
 		OsSuspeitos s = new OsSuspeitos(graph, tam, num);
 		

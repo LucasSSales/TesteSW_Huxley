@@ -18,7 +18,7 @@ class GraphTest {
 		g.putNode("2", new Node("5", 7));
 		
 		g.putNode("3", new Node("6", 3));
-		g.putNode("1", new Node("7", 2));
+		g.putNode("3", new Node("7", 2));
 		
 		g.putNode("4", new Node("5", 8));
 		g.putNode("4", new Node("6", 10));
