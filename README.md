@@ -1,64 +1,64 @@
 # TesteSW_Huxley
-Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 19/20)
+Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 20/20) \O/
 
 Questões:
 
-*474 - ROTAS DE ENTREGA
+474 - ROTAS DE ENTREGA
 https://www.thehuxley.com/problem/474?quizId=2127
 
-*874 - CORTE DE HASTES
+874 - CORTE DE HASTES
 https://www.thehuxley.com/problem/874?quizId=2265
 
-*602 - ADEGA DE VINHOS
+602 - ADEGA DE VINHOS
 https://www.thehuxley.com/problem/602?quizId=2265
 
-*171 - REDUZINDO MAPAS
+171 - REDUZINDO MAPAS
 https://www.thehuxley.com/problem/171?locale=pt_BR
 
-*639 - ENERGIA X TEMPO
+639 - ENERGIA X TEMPO
 https://www.thehuxley.com/problem/639?quizId=2265
 
-*628 - ÁRVORE GERADORA MÁXIMA
+628 - ÁRVORE GERADORA MÁXIMA
 https://www.thehuxley.com/problem/628?locale=pt_BR
 
-*821 - BITMAP
+821 - BITMAP
 https://www.thehuxley.com/problem/821?locale=pt_BR
 
-*790 - MOCHILA
+790 - MOCHILA
 https://www.thehuxley.com/problem/790?locale=pt_BR
 
-*1021 - SUPER SALES
+1021 - SUPER SALES
 https://www.thehuxley.com/problem/1021?locale=pt_BR
 
-*1848 - SUBCONJUNTOS COMPLEMENTARES
+1848 - SUBCONJUNTOS COMPLEMENTARES
 https://www.thehuxley.com/problem/1848?quizId=2510
 
-*562 - PIZZARIA
+562 - PIZZARIA
 https://www.thehuxley.com/problem/562?locale=pt_BR
 
-*440 - OS SUSPEITOS
+440 - OS SUSPEITOS
 https://www.thehuxley.com/problem/440?locale=pt_BR
 
-*557 - MULTIPLICAÇÃO DE MATRIZES DE FORMA ÓTIMA
+557 - MULTIPLICAÇÃO DE MATRIZES DE FORMA ÓTIMA
 https://www.thehuxley.com/problem/557
 
-*893 - DADOS DA SORTE
+893 - DADOS DA SORTE
 https://www.thehuxley.com/problem/893?locale=pt_BR
 
-*1022 - PALINDROMO
+1022 - PALINDROMO
 https://www.thehuxley.com/problem/1022?quizId=2265
 
-*219 - TABULEIRO ESBURACADO
+219 - TABULEIRO ESBURACADO
 https://www.thehuxley.com/problem/219?locale=pt_BR
 
-*173 - CADEIRAS DO AUDITÓRIO
+173 - CADEIRAS DO AUDITÓRIO
 https://www.thehuxley.com/problem/173
 
 603 - ORKUT
 https://www.thehuxley.com/problem/603
 
-*213 - COSTA
+213 - COSTA
 https://www.thehuxley.com/problem/213
 
-*1997 - FRETE
+1997 - FRETE
 https://www.thehuxley.com/problem/1997?locale=pt_BR
