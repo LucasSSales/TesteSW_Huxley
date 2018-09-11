@@ -51,7 +51,7 @@ https://www.thehuxley.com/problem/1022?quizId=2265
 *219 - TABULEIRO ESBURACADO
 https://www.thehuxley.com/problem/219?locale=pt_BR
 
-173 - CADEIRAS DO AUDITÓRIO
+*173 - CADEIRAS DO AUDITÓRIO
 https://www.thehuxley.com/problem/173
 
 603 - ORKUT
