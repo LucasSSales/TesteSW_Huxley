@@ -18,7 +18,7 @@ https://www.thehuxley.com/problem/171?locale=pt_BR
 639 - ENERGIA X TEMPO*
 https://www.thehuxley.com/problem/639?quizId=2265
 
-628 - ÁRVORE GERADORA MÁXIMA
+628 - ÁRVORE GERADORA MÁXIMA*
 https://www.thehuxley.com/problem/628?locale=pt_BR
 
 821 - BITMAP*
