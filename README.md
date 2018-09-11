@@ -1,5 +1,5 @@
 # TesteSW_Huxley
-Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 18/20)
+Trabalho para disciplina de Teste de Software (Covertidas p/ java: 20/20) (Com testes criados: 19/20)
 
 Questões:
 
