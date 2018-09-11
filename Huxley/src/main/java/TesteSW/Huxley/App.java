@@ -34,6 +34,21 @@ public class App
         System.out.println( "Hello World!" );
         
         
+//        1
+//        7 10
+//        1 2 5
+//        1 6 5
+//        1 3 7
+//        2 5 7
+//        3 6 3
+//        3 7 2
+//        4 5 8
+//        4 6 10
+//        5 6 2
+//        6 7 4
+        
+        
+        
         //int[] s = {2,3,6};
         //int[] s = {2,4,6};
 //        SubconjuntosComplementares sc = new SubconjuntosComplementares(s, 7); //Yes
