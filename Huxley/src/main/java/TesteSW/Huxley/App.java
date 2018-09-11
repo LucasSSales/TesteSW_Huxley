@@ -33,14 +33,6 @@ public class App
     {
         System.out.println( "Hello World!" );
         
-        String s = "4372	3688	980 446	1515	3278	4025	3222	4087	1395	37	1433	1565	2213	3938	2920	899	4090	2566	4435	2483	3454	937	3570	4280	2793	2677	2378	1927	1834	3171	2267	1380	1601	3776	3420	3458	2460	3227	1790	3598	1210	732	3585	3007	3278	1890	108	2166	1513	201	226	2561	7	2166	583	2852	2310	3954	781	2439	798	2025	2881	3647	3051	771	4412	2146	4154	1596	2892	1084	848	3708	4993	179	2052	4104	1414	525	164	2157	260	225	323	2368	1528	1164	601	993	4931	2189	4769	2079	4741	1399	3239	2579	4536	";
-        String[] s2 = s.split("\t");
-        int[] i = new int[s2.length];
-        int cont = 0;
-        for(String h : s2)
-        	i[cont++] = Integer.parseInt(h);
-        for(int h : i)
-        	System.out.println(h);
         
 //        1
 //        7 10
@@ -55,14 +47,6 @@ public class App
 //        5 6 2
 //        6 7 4
         
-        
-        
-        //int[] s = {2,3,6};
-        //int[] s = {2,4,6};
-//        SubconjuntosComplementares sc = new SubconjuntosComplementares(s, 7); //Yes
-        //SubconjuntosComplementares sc = new SubconjuntosComplementares(s, 2); //No
-//        SubconjuntosComplementares sc = new SubconjuntosComplementares(s, 11); //Yes
-//        System.out.println(sc.resolve());
         
         
         
@@ -87,20 +71,7 @@ public class App
         
         
         
-       // Graph graph = new Graph();
-//        graph.putNode("2", new Node("1", 230));
-//        graph.putNode("1", new Node("3", 430));
-//        int[] orders = {3,2};
-        
-        
-//	     graph.putNode("1", new Node("2", 250));
-//	     graph.putNode("1", new Node("3", 928));
-//	     graph.putNode("2", new Node("3", 305));
-//	     int[] orders = {2,2};        
-//        
-//        
-//        Pizzaria p = new Pizzaria(graph, orders);
-        //System.out.println(p.resolve());;
+
         
  ///////////////////////////////////////////////////////////////////////////////      
         

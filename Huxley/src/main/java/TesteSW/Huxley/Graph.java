@@ -33,6 +33,13 @@ public class Graph {
 		adj_list.get(destiny.getStrValue()).add(new Node(source, destiny.getDistance()));
 	}
 	
+	public void putVertex(String vertex) {
+		if(!this.adj_list.containsKey(vertex)) {
+			this.adj_list.put(vertex, new ArrayList<Node>());
+		}
+			
+	}
+	
 	public void printGraph() {
 		Set<String> keys = adj_list.keySet();
 		for (String s : keys) {
@@ -48,6 +55,10 @@ public class Graph {
 		for(String s : adj_list.keySet()) {
 			distances.put(s, new Integer(Integer.MAX_VALUE));
 		}
+	}
+	
+	public Set<String> keys() {
+		return this.adj_list.keySet();
 	}
 	
 //	public void bfs(String source) {
@@ -188,7 +199,7 @@ public class Graph {
 		return sum;
 	}
 	
-	public void bfsOsSuspeitos(String source) {
+	public int bfsOsSuspeitos(String source) {
 		ArrayList<Node> queue = new ArrayList<Node>();
 		HashMap<String, Boolean> visited = new HashMap<String, Boolean>();
 		int cont = 1;
@@ -207,7 +218,7 @@ public class Graph {
 				}
 			}
 		}
-		System.out.println(cont);
+		return cont;
 	}
 
 }

@@ -14,4 +14,10 @@ public class ReduzindoMapas {
 		return graph.mst(source);		
 	}
 
+	public Graph getGraph() {
+		return graph;
+	}
+	
+	
+
 }

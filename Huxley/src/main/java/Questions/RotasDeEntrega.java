@@ -10,15 +10,16 @@ public class RotasDeEntrega {
 		this.routes = routes;
 	}
 	
-	
 	public String resolve(String origin, String destiny, int size) {
-		
-		if(routes.dijkstra(origin).get(destiny).equals(Integer.MAX_VALUE)) {
-			return "NO SHIPMENT POSSIBLE";
-		}
-		
+		if(!routes.dijkstra(origin).containsKey(destiny) || routes.dijkstra(origin).get(destiny).equals(Integer.MAX_VALUE))
+			return "NO SHIPMENT POSSIBLE";		
 		return "$" + (routes.dijkstra(origin).get(destiny) * size * 100);
-
 	}
+
+	public Graph getRoutes() {
+		return routes;
+	}
+	
+	
 
 }
