@@ -17,7 +17,6 @@ class ArvoreGeradoraMaximaTest {
 	    max.putNode("1", new Node("3",4));
 	    
 	    
-	    
 	    assertAll(
 	    		() -> { assertNotNull(max); },
 	    		() -> { assertEquals(7, max.resolve("1")); }
@@ -47,6 +46,25 @@ class ArvoreGeradoraMaximaTest {
 		
 	}
 
+	@Test
+	void test03() {
+	    Graph g = new Graph();
+	    ArvoreGeradoraMaxima max = new ArvoreGeradoraMaxima();
+		String[][] nodes = {{"A","B"}, {"A", "D"}, {"A", "E"}, {"A", "F"}, {"B", "D"} ,
+				{"C","E"}, {"C", "G"}, {"E", "G"}, {"E", "H"}, {"F", "H"}};
+		int[] dists = {7, 6, 5, 17, 12, 3, 2, 9, 3, 2};
+	
+		for(int i = 0; i < dists.length; i++) {
+			Node n = new Node(nodes[i][1], dists[i]);
+			max.putNode(nodes[i][0], n);
+		}
+		    	    
+	    assertAll(
+	    		() -> { assertNotNull(max); },
+	    		() -> { assertEquals(56, max.resolve("A")); }
+	    		);
+		
+	}
 
 
 }

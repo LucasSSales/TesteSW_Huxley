@@ -41,4 +41,24 @@ class CorteDeHastesTest {
 				);
 	}
 
+
+	@Test
+	void test03() {
+		int[] values = 	{402,	333,	252,	117,	302,	64,	349,	202,	455,	167,	
+				330,	101,	135,	25,	214,	76,	219,	439,	173,	371,	
+				11,	191,	424,	370,	41,	197,	453,	58	,297,	43,	
+				158,	459,	437,	56,	298,	216,	335,	314,	207,	160,	
+				323,	484,	474,	481,	364,	352,	125,	13,	498,	417};
+		CorteDeHastes ch = new CorteDeHastes(values);
+		assertAll(
+				() -> { assertNotNull(ch); },
+				() -> { assertEquals(values, ch.getValues()); },
+				() -> { assertEquals(values.length, ch.getCases()); },
+				() -> {
+					for (int i = 1; i <= ch.getCases(); i++)
+						assertEquals(-1, ch.getMemo()[i]);
+				},
+				() -> { assertEquals(20100, ch.resolve()); }
+				);
+	}
 }

@@ -61,5 +61,31 @@ class SuperSalesTest {
 				);
 		
 	}
+	
+	@Test
+	void test03() {
+	    int[] prices = {1,	49,	6,	51,	67,	84,	68,	57,	73,	100,	54	,42	,68	,80	,16	,96	,24,	4	,88,	87}	;
+	    int[] weights = {25,	43,	74,	22,	61,	72,	99,	80,	21,	89,	14,	77,	14,	36,	91,	71,	71,	54,	71,	37	};
+	    int[] max = {81,27,	12,	87,	39,	67,	45,	5,	79};
+
+	    SuperSales ss = new SuperSales(prices, weights, max);
+	    	    
+		assertAll(
+				() -> { assertNotNull(ss); },
+				() -> { assertNotNull(ss.getBackpack()); },
+				() -> {
+					int i = 0;
+					for(Mochila m : ss.getBackpack()) {
+						assertEquals(max[i], m.getMaxCapacity());
+						assertEquals(prices, m.getPrices());
+						assertEquals(weights, m.getWeights());
+						assertEquals(prices.length, m.getNumberOfItems());
+						i++;
+					}
+				},
+				() -> { assertEquals(1338, ss.resolve()); }
+				);
+		
+	}
 
 }

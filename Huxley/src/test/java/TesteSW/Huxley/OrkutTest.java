@@ -206,6 +206,54 @@ class OrkutTest {
 	    		 );
 	}
 	
+	@Test
+	void test05() {
+		 String[] friends = {"Jonathan", "Joseph", "Jotaro", "Josuke", "Giorno", "Jolyne", "Dio", "Speedwagon", "Shiza", "Stroheim"};
+		 Orkut o = new Orkut(friends);
+		 int[] indegrees = {0,1,1,2,1,1,2,2,1,1};
+		 
+		 for(String s : friends)
+			 o.putVertex(s);
+		 		 
+	     o.putNode("Jonathan", new Node("Joseph", 1));
+	     o.putNode("Joseph", new Node("Jotaro", 1));     
+	     o.putNode("Joseph", new Node("Josuke", 1));
+	     o.putNode("Jotaro", new Node("Josuke", 1));
+	     o.putNode("Jonathan", new Node("Giorno", 1));
+	     o.putNode("Jotaro", new Node("Jolyne", 1));
+	     o.putNode("Jonathan", new Node("Dio", 1)); 
+	     o.putNode("Giorno", new Node("Dio", 1));  
+	     o.putNode("Jonathan", new Node("Speedwagon", 1));
+	     o.putNode("Joseph", new Node("Speedwagon", 1));	     
+	     o.putNode("Joseph", new Node("Shiza", 1));	     
+	     o.putNode("Joseph", new Node("Stroheim", 1));
+	      
+	     String expected = "Jonathan Joseph Giorno Jotaro Speedwagon Shiza Stroheim Dio Josuke Jolyne\n";
+	     
+	     assertAll(
+	    		 () -> { assertNotNull(o); },
+	    		 () -> { assertNotNull(o.getIndegrees()); },
+	    		 () -> {
+	    			 for(int i = 0; i < indegrees.length; i++) {
+		    			 o.putIndegrees(friends[i], indegrees[i]);
+		    			 assertTrue(o.getIndegrees().containsKey(friends[i]));
+		    			 assertEquals(""+indegrees[i], o.getIndegrees().get(friends[i]).toString());
+	    			 }
+	    		 },
+	    		 () -> { assertArrayEquals(friends, o.getFriends()); },
+	    		 () -> {
+	    			 for(String s : friends) {
+	    				 System.out.println(o.getIndegrees().get(s));
+	    				 assertTrue(o.getAdj_list().containsKey(s));
+	    				 assertNotNull(o.getAdj_list().get(s));
+	    				 assertTrue(o.getVisited().containsKey(s));
+	    				 assertFalse(o.getVisited().get(s));
+	    			 }
+	    		 },
+	    		 () -> { assertEquals(expected, o.resolve()); }
+	    		 );
+	}
+	
 	
 
 }

@@ -9,27 +9,45 @@ import Questions.Costa;
 class CostaTest {
 
 	@Test
-	void testCosta() {
-		//fail("Not yet implemented");
-	}
-
-	@Test
-	void testResolve() {
-		
-        char[][] mapa1 = {
+	void test01() {
+        char[][] mapa = {
         		{'#', '#', '#', '#', '#'}, 
         		{'#', '.', '.', '.', '#'}, 
         		{'.', '.', '.', '.', '.'}, 
         		{'#', '.', '.', '.', '.'}, 
         		{'#', '#', '.', '.', '#'}};
-        
-        char[][] mapa2 = {
+		Costa c = new Costa(mapa);
+		
+		assertAll(
+				() -> {assertNotNull(c);},
+				() -> {assertEquals(mapa, c.getMapa());},
+				() -> { assertEquals(mapa.length, c.getL()); },
+				() -> { assertEquals(mapa[0].length, c.getC()); },
+				() -> { assertEquals(11, c.resolve()); }
+				);
+	}
+	
+	@Test
+	void test02() {
+        char[][] mapa = {
         		{'#', '.', '.', '.'}, 
         		{'.', '#', '.', '.'}, 
         		{'.', '.', '#', '.'}, 
         		{'.', '.', '.', '#'}};
-        
-        char[][] mapa3 = {
+		Costa c = new Costa(mapa);
+		
+		assertAll(
+				() -> {assertNotNull(c);},
+				() -> {assertEquals(mapa, c.getMapa());},
+				() -> { assertEquals(mapa.length, c.getL()); },
+				() -> { assertEquals(mapa[0].length, c.getC()); },
+				() -> { assertEquals(4, c.resolve()); }
+				);
+	}
+	
+	@Test
+	void test03() {
+        char[][] mapa = {
         		{'.', '.', '.', '#', '#', '#', '#', '.', '.'}, 
         		{'.', '.', '.', '.', '.', '.', '.', '.', '.'},
         		{'.', '#', '#', '#', '.', '.', '.', '#', '#'},
@@ -39,20 +57,59 @@ class CostaTest {
         		{'.', '.', '.', '.', '.', '.', '.', '.', '.'},
         		{'.', '.', '.', '.', '.', '.', '.', '#', '#'},
         		{'#', '.', '.', '#', '#', '#', '#', '.', '.'},
-        		{'.', '.', '.', '.', '.', '#', '#', '.', '.'}};       
-        
-        Costa c1 = new Costa(mapa1);
-        Costa c2 = new Costa(mapa2);
-        Costa c3 = new Costa(mapa3);
-        
-        assertAll(
-        		() -> { assertEquals(11, c1.resolve()); },
-        		() -> { assertEquals(4, c2.resolve()); },
-        		() -> { assertEquals(29, c3.resolve()); }
-        		);
+        		{'.', '.', '.', '.', '.', '#', '#', '.', '.'}}; 
+		Costa c = new Costa(mapa);
 		
+		assertAll(
+				() -> {assertNotNull(c);},
+				() -> {assertEquals(mapa, c.getMapa());},
+				() -> { assertEquals(mapa.length, c.getL()); },
+				() -> { assertEquals(mapa[0].length, c.getC()); },
+				() -> { assertEquals(29, c.resolve()); }
+				);
+	}
+	
+	@Test
+	void test04() {
+        char[][] mapa = {
+        		{'.', '.', '.', '.', '.', ',', '.'}, 
+        		{'.', '.', '.', '.', '.', ',', '.'},
+        		{'.', '.', '.', '.', '.', ',', '.'},
+        		{'.', '.', '.', '.', '.', ',', '.'},
+        		{'.', '.', '.', '.', '.', ',', '.'},
+        		{'.', '.', '.', '.', '.', ',', '.'},
+        		{'.', '.', '.', '.', '.', ',', '.'},
+        		{'.', '.', '.', '.', '.', ',', '.'},
+        		{'.', '.', '.', '.', '.', ',', '.'},
+        		{'.', '.', '.', '.', '.', ',', '.'}}; 
+		Costa c = new Costa(mapa);
 		
-		//fail("Not yet implemented");
+		assertAll(
+				() -> {assertNotNull(c);},
+				() -> {assertEquals(mapa, c.getMapa());},
+				() -> { assertEquals(mapa.length, c.getL()); },
+				() -> { assertEquals(mapa[0].length, c.getC()); },
+				() -> { assertEquals(0, c.resolve()); }
+				);
+	}
+	
+	@Test
+	void test05() {
+        char[][] mapa = {
+        		{'#', '#', '#', '#', '#'}, 
+        		{'#', '#', '#', '#', '#'},
+        		{'#', '#', '#', '#', '#'},
+        		{'#', '#', '#', '#', '#'},
+        		{'#', '#', '#', '#', '#'}}; 
+		Costa c = new Costa(mapa);
+		
+		assertAll(
+				() -> {assertNotNull(c);},
+				() -> {assertEquals(mapa, c.getMapa());},
+				() -> { assertEquals(mapa.length, c.getL()); },
+				() -> { assertEquals(mapa[0].length, c.getC()); },
+				() -> { assertEquals(16, c.resolve()); }
+				);
 	}
 
 }
