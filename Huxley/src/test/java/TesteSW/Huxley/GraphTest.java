@@ -22,8 +22,7 @@ class GraphTest {
 						assertTrue(g.getAdj_list().containsKey(v));
 						assertNotNull(g.getAdj_list().get(v));
 					}					
-				},
-				
+				},		
 				() -> {//putNode()
 					String[][] nodes = {{"1", "2"}, {"1", "3"}, {"1", "6"}, {"2","5"}, {"3", "6"} ,
 										{"3","7"}, {"4", "5"}, {"4", "6"}, {"5", "6"}, {"6", "7"}};
@@ -33,11 +32,8 @@ class GraphTest {
 						Node n = new Node(nodes[i][1], dists[i]);
 						assertTrue(g.putNode(nodes[i][0], n));
 					}
-				},
-				
+				},				
 				() -> {assertNotNull(g.getDistances());}
-				//dijkstra, mst, maxst
-				
 				);
 		
 		

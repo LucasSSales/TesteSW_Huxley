@@ -31,19 +31,7 @@ public class App
 {
     public static void main( String[] args ) {
     	
-        System.out.println( "Hello World!" );
-        
-//////////////////////////////////////////////////////////////////////////////
-//        
-//        
-//        DadosDaSorte ds = new DadosDaSorte(1, 8);
-//        System.out.println(ds.resolve());
-//        DadosDaSorte ds1 = new DadosDaSorte(2, 11);
-//        System.out.println(ds1.resolve());
-//     
-////////////////////////////////////////////////////////////////////////////////////
-
-                
+        System.out.println( "Hello World!" );       
         
     }
 }
